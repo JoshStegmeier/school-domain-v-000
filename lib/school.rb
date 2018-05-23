@@ -5,6 +5,13 @@ class School
   def initialize(input)
   end
 
+  def roster=(input)
+  end
+
+  def roster
+    ROSTER
+  end
+
   def add_student(name, grade)
     unless ROSTER.include?(grade)
       ROSTER[grade] = []
