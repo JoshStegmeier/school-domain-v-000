@@ -6,7 +6,9 @@ class School
   end
 
   def add_student(name, grade)
-    ROSTER.merge!(#{name}: grade)
+    unless ROSTER.include?(grade)
+      ROSTER[grade] = []
+    end
   end
 
 end
