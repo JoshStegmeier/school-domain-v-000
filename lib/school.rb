@@ -1,9 +1,8 @@
 class School
 
-
+  ROSTER = {}
 
   def initialize(input)
-    ROSTER = {}
   end
 
   def roster=(input)
