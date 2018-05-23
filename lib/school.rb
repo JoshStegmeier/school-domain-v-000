@@ -1,22 +1,17 @@
 class School
 
-  ROSTER = {}
+  attr_accessor :name, :roster
 
-  def initialize(input)
-  end
-
-  def roster=(input)
-  end
-
-  def roster
-    ROSTER
+  def initialize(name)
+    @name = name
+    @roster = {}
   end
 
   def add_student(name, grade)
-    unless ROSTER.include?(grade)
-      ROSTER[grade] ||= []
+    unless @roster.include?(grade)
+      @roster[grade] ||= []
     end
-    ROSTER[grade] << name
+    @roster[grade] << name
   end
 
 end
