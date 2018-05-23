@@ -5,12 +5,8 @@ class School
   def initialize(input)
   end
 
-  def roster=(input)
-    ROSTER << input
-  end
-
-  def roster
-    ROSTER
+  def add_student(name, grade)
+    ROSTER.merge!(#{name}: grade)
   end
 
 end
