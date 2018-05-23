@@ -16,6 +16,7 @@ class School
     unless ROSTER.include?(grade)
       ROSTER[grade] = []
     end
+    ROSTER[grade] << name 
   end
 
 end
