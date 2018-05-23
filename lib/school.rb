@@ -1,8 +1,9 @@
 class School
 
-  ROSTER = {}
+
 
   def initialize(input)
+    ROSTER = {}
   end
 
   def roster=(input)
@@ -16,7 +17,7 @@ class School
     unless ROSTER.include?(grade)
       ROSTER[grade] = []
     end
-    ROSTER[grade] << name 
+    ROSTER[grade] << name
   end
 
 end
