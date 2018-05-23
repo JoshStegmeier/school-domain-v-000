@@ -19,7 +19,7 @@ class School
   end
 
   def sort
-    @roster.sort
+    @roster.each {|x| x.sort}
   end
 
 end
