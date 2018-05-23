@@ -9,7 +9,7 @@ class School
 
   def add_student(name, grade)
     unless @roster.include?(grade)
-      @roster[grade] ||= []
+      @roster[grade] = []
     end
     @roster[grade] << name
   end
