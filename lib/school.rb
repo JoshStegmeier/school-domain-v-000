@@ -18,4 +18,8 @@ class School
     @roster[numerical_grade]
   end
 
+  def sort
+    @roster.sort
+  end
+
 end
