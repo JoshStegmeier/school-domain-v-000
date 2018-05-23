@@ -1,6 +1,8 @@
 class School
 
-  ROSTER = {}
+  def initialize
+    ROSTER = {}
+  end
 
   def roster=(input)
     ROSTER << input
